@@ -1,0 +1,45 @@
+$min-height: 100vh;
+$header-height: 64px;
+$siderbar-width: 200px;
+
+.appLayout {
+  min-height: $min-height;
+  // header 头部
+  .appHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  // logo
+  .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  // 除头部之外的区域
+
+  .appSubLayout {
+    min-height: $min-height;
+    // 左侧sidebar
+    .sibeBarSection {
+      position: fixed;
+      top: $header-height;
+      left: 0;
+      bottom: 0;
+      width: $siderbar-width;
+      flex-shrink: 0;
+      background-color: #fff;
+      overflow-y: auto;
+      z-index: 1;
+    }
+    // 内容区域
+    .contentWrapper {
+      padding-top: $header-height;
+      padding-left: $siderbar-width;
+    }
+  }
+}
