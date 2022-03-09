@@ -51,6 +51,3 @@ mock 数据使用的 yapi，如果没有权限 请联系 `liujianwei1` 开通
 
 946705591
 
-## SSO
-
-[sso 接入文档]https://service.100tal.com/new/app/list/my
